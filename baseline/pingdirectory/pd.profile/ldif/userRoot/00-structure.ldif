@@ -46,3 +46,7 @@ aci: (targetattr="*")(version 3.0; acl "Allow the pingfederate user to do everyt
 objectClass: top
 objectClass: organizationalUnit
 ou: sessions
+
+dn: cn=administrator,ou=residential,dc=nuuday,dc=dk
+objectClass: inetOrgPerson
+authzTo: {0}ldap://dc=nuuday,dc=dk/??sub?(objectClass=inetOrgPerson)
